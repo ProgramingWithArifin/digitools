@@ -1,0 +1,31 @@
+import React from 'react';
+import bannerpng from '../assets/banner.png'
+const Banner = () => {
+    return (
+        <div className='max-w-7xl mx-auto w-11/12 flex flex-col lg:flex-row justify-between items-center gap-17 py-10'>
+            <div className="left space-y-7 flex-1">
+                <div className=" text-violet-500 flex items-center gap-2 bg-violet-100 p-2 rounded-3xl">
+                    <div aria-label="status" className="status status-primary"></div>
+                    <p>
+                        New: AI-Powered Tools Available
+                    </p>
+                </div>
+                <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold'>
+                    Supercharge Your <br /> Digital Workflow
+                </h1>
+                <p>
+                    Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.Explore Products
+                </p>
+                <div className="btn-area flex gap-2">
+                    <button className='btn btn-primary'>Explore Products</button>
+                    <button className='btn btn-primary'></button>
+                </div>
+            </div>
+            <div className="right">
+                <img src={bannerpng} alt="" className='shadow shadow-2xl'/>
+            </div>
+        </div>
+    );
+};
+
+export default Banner;
