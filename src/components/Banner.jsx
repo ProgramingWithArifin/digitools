@@ -1,4 +1,3 @@
-import React from 'react';
 import bannerpng from '../assets/banner.png'
 import playpng from '../assets/Play.png'
 const Banner = () => {
@@ -18,12 +17,12 @@ const Banner = () => {
                     Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.Explore Products
                 </p>
                 <div className="btn-area flex gap-2">
-                    <button className='btn btn-primary rounded-3xl'>Explore Products</button>
-                    <button className='btn btn-primary btn-outline rounded-3xl'><img src={playpng} alt="" />Watch Demo</button>
+                    <button className='btn btn-primary rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>Explore Products</button>
+                    <button className='btn btn-primary  btn-outline rounded-3xl'><img src={playpng} alt="" />Watch Demo</button>
                 </div>
             </div>
             <div className="right">
-                <img src={bannerpng} alt="" className='shadow shadow-2xl'/>
+                <img src={bannerpng} alt="" className='shadow-2xl'/>
             </div>
         </div>
     );
