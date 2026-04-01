@@ -1,5 +1,6 @@
 import React from 'react';
 import bannerpng from '../assets/banner.png'
+import playpng from '../assets/Play.png'
 const Banner = () => {
     return (
         <div className='max-w-7xl mx-auto w-11/12 flex flex-col lg:flex-row justify-between items-center gap-17 py-10'>
@@ -17,8 +18,8 @@ const Banner = () => {
                     Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.Explore Products
                 </p>
                 <div className="btn-area flex gap-2">
-                    <button className='btn btn-primary'>Explore Products</button>
-                    <button className='btn btn-primary'></button>
+                    <button className='btn btn-primary rounded-3xl'>Explore Products</button>
+                    <button className='btn btn-primary btn-outline rounded-3xl'><img src={playpng} alt="" />Watch Demo</button>
                 </div>
             </div>
             <div className="right">
