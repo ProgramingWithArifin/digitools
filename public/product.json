@@ -4,13 +4,13 @@
     "name": "AI Writing Pro",
     "description": "Generate high-quality blog posts, emails, and marketing copy in seconds with advanced AI.",
     "price": 29,
-    "period": "one-time",
+    "period": "One-Time",
     "tag": "New",
-    "tagType": "orange",
+    "tagType": "badge-info",
     "features": ["Unlimited generations", "50+ writing templates", "Grammar checker"],
     "icon": "FaPenNib",
     "iconColor": "text-orange-500",
-    "image": "/products/writing_2327400 1.png"
+    "image": "https://i.ibb.co.com/YFmDwtWB/writing-2327400-1.png"
   },
   {
     "id": 2,
@@ -19,11 +19,11 @@
     "price": 49,
     "period": "monthly",
     "tag": "Free Trial",
-    "tagType": "pink",
+    "tagType": "badge-secondary",
     "features": ["2000+ templates", "Monthly updates", "Commercial license"],
     "icon": "FaPalette",
     "iconColor": "text-pink-500",
-    "image": "/products/design-tool.png"
+    "image": "https://i.ibb.co.com/MywHsngF/design-tool.png"
   },
   {
     "id": 3,
@@ -32,10 +32,11 @@
     "price": 19,
     "period": "monthly",
     "tag": "Hot",
-    "tagType": "green",
+    "tagType": "badge-success",
     "features": ["1M+ assets", "Cancel any time", "High resolution"],
     "icon": "FaCamera",
-    "iconColor": "text-green-500"
+    "iconColor": "text-green-500",
+    "image": "https://i.ibb.co.com/KxNKrGfD/ecfae8e3-f444-42be-96ad-e8aaeae4d7ce.png"
   },
   {
     "id": 4,
@@ -44,11 +45,11 @@
     "price": 79,
     "period": "yearly",
     "tag": "Popular",
-    "tagType": "blue",
+    "tagType": "badge-warning",
     "features": ["50+ Automations", "All tools included", "Custom workflows"],
     "icon": "FaGear",
     "iconColor": "text-blue-500",
-    "image": "/products/operation.png"
+    "image": "https://i.ibb.co.com/nqgjQ2Vd/operation.png"
   },
   {
     "id": 5,
@@ -57,11 +58,11 @@
     "price": 15,
     "period": "one-time",
     "tag": "New",
-    "tagType": "yellow",
+    "tagType": "badge-info",
     "features": ["Top 500 templates", "ATS optimization", "Export to PDF"],
     "icon": "FaFileInvoice",
     "iconColor": "text-yellow-500",
-    "image": "/products/portfolio.png"
+    "image": "https://i.ibb.co.com/WpWFhV5N/portfolio.png"
   },
   {
     "id": 6,
@@ -70,10 +71,10 @@
     "price": 35,
     "period": "one-time",
     "tag": "Best Seller",
-    "tagType": "indigo",
+    "tagType": "badge-primary",
     "features": ["1000+ videos", "Schedule in store", "Analytics dashboard"],
     "icon": "FaBullhorn",
     "iconColor": "text-indigo-500",
-    "image": "/products/social-media.png"
+    "image": "https://i.ibb.co.com/ks6Qxf1X/social-media.png"
   }
 ]

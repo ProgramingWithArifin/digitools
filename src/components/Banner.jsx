@@ -2,7 +2,7 @@ import bannerpng from '../assets/banner.png'
 import playpng from '../assets/Play.png'
 const Banner = () => {
     return (
-        <div className='max-w-7xl mx-auto w-11/12 flex flex-col lg:flex-row justify-between items-center gap-17 py-10'>
+        <div className='max-w-7xl mx-auto w-11/12 flex flex-col lg:flex-row justify-between items-center gap-17 py-10 pt-2'>
             <div className="left space-y-7 flex-1">
                 <div className=" text-violet-500 flex items-center gap-2 bg-violet-100 p-2 rounded-3xl">
                     <div aria-label="status" className="status status-primary"></div>
