@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaCartShopping } from 'react-icons/fa6';
 
-const Navbar = ({ cart}) => {
+const Navbar = ({ cart, updateTab }) => {
     return (
-        <nav className="navbar bg-base-100 shadow-sm px-4 mx-auto">
+        <nav className="navbar bg-base-100 shadow-sm px-4 mx-auto sticky top-0 z-1000">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,7 +31,10 @@ const Navbar = ({ cart}) => {
                 </ul>
             </div>
             <div className="navbar-end flex gap-4">
-                <button className="relative">
+                <button onClick={() =>
+                    updateTab(false)
+
+                } className="relative">
                     <FaCartShopping className='text-xl' />
                     {cart.length > 0 && (
                         <span className="absolute -top-1.5 -right-1.5 text-white bg-red-600 px-1 rounded-sm font-bold text-[10px]">

@@ -48,7 +48,7 @@ const Pricing = () => {
                     </ul>
 
                     {/* Action Button */}
-                    <button className="btn btn-primary w-full rounded-3xl bg-[#7C3AED] hover:bg-[#6D28D9] border-none text-white normal-case text-xl h-16 mt-auto">
+                    <button className="btn btn-primary w-full rounded-3xl bg-[#7C3AED] hover:bg-[#6D28D9] border-none text-white h-16 text-xl mt-auto">
                         Buy Now
                     </button>
                 </div>
@@ -113,7 +113,6 @@ const Pricing = () => {
                     </button>
                 </div>
 
-                {/* enterprise price */}
                 <div className="card bg-[#F9FAFC] border border-[#F2F2F2] p-8 shadow-sm space-y-6">
                     <div>
                         <h2 className="text-3xl font-bold text-slate-900 mb-2">Enterprise</h2>

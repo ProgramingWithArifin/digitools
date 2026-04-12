@@ -2,6 +2,7 @@ import React from 'react';
 
 const ProductCard = ({ product, cart, updateCart }) => {
     const tagBg = product.tagType;
+    const isInCart = cart.some(item => item.id === product.id);
     return (
         <div className="card w-full max-w-94 bg-base-100 shadow-xl mx-auto">
             <div className="card-body">
@@ -29,7 +30,7 @@ const ProductCard = ({ product, cart, updateCart }) => {
 
                 </ul>
                 <div className="mt-6">
-                    <button className={`btn btn-primary btn-block bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl`}>Buy Now</button>
+                    <button onClick={()=>updateCart(product)} className={`btn btn-primary btn-block bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl`}>{isInCart ? 'Added to Cart' : 'Buy Now'}</button>
                 </div>
             </div>
         </div>
