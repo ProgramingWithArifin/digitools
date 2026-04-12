@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, cart, updateCart }) => {
     const tagBg = product.tagType;
     return (
         <div className="card w-full max-w-94 bg-base-100 shadow-xl mx-auto">
@@ -29,7 +29,7 @@ const ProductCard = ({ product }) => {
 
                 </ul>
                 <div className="mt-6">
-                    <button className="btn btn-primary btn-block bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl">Buy Now</button>
+                    <button className={`btn btn-primary btn-block bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl`}>Buy Now</button>
                 </div>
             </div>
         </div>

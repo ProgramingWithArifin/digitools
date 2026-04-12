@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaCartShopping } from 'react-icons/fa6';
 
-const Navbar = (cart) => {
+const Navbar = ({ cart}) => {
     return (
         <nav className="navbar bg-base-100 shadow-sm px-4 mx-auto">
             <div className="navbar-start">
@@ -31,7 +31,14 @@ const Navbar = (cart) => {
                 </ul>
             </div>
             <div className="navbar-end flex gap-4">
-                <button><span></span> <FaCartShopping className='text-xl'></FaCartShopping></button>
+                <button className="relative">
+                    <FaCartShopping className='text-xl' />
+                    {cart.length > 0 && (
+                        <span className="absolute -top-1.5 -right-1.5 text-white bg-red-600 px-1 rounded-sm font-bold text-[10px]">
+                            {cart?.length}
+                        </span>
+                    )}
+                </button>
                 <button className='btn btn-ghost font-bold text-gray-700'>Login</button>
                 <button className='btn btn-primary rounded-3xl'>Get Started</button>
             </div>
