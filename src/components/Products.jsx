@@ -3,7 +3,7 @@ import ProductCard from './ProductCard'
 import Cart from './Cart'
 import React from 'react';
 
-const Products = ({ dataPromise, cart, updateCart, tab, updateTab,setCart }) => {
+const Products = ({ dataPromise, cart, updateCart, tab, updateTab,setCart,total, removeCart }) => {
     const data = use(dataPromise);
     const clearCart=()=>{
         setCart([])
@@ -32,12 +32,12 @@ const Products = ({ dataPromise, cart, updateCart, tab, updateTab,setCart }) => 
                                 <h2 className='text-2xl font-semibold'>Your Cart</h2>
                                 {
                                     cart.map(
-                                        cartiteam => <Cart key={cartiteam.id} cartiteam={cartiteam}></Cart>
+                                        cartiteam => <Cart removeCart={removeCart} key={cartiteam.id} cartiteam={cartiteam}></Cart>
                                     )
                                 }
                                 <div className="flex justify-between">
                                     <p>Total:</p>
-                                    <h3 className='text-2xl font-bold'>$50</h3>
+                                    <h3 className='text-2xl font-bold'>${total}</h3>
                                 </div>
                                 <div className="mt-6">
                                     <button onClick={clearCart} className={`btn btn-primary btn-block bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl btn-lg`}>Proceed to Checkout</button>

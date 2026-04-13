@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Cart = ({cartiteam}) => {
-    console.log(cartiteam)
+const Cart = ({cartiteam, removeCart}) => {
+    
     return (
         <div className='flex justify-between p-5 bg-base-200 rounded-2xl items-center '>
             <div className="flex gap-5 items-center">
@@ -12,7 +12,7 @@ const Cart = ({cartiteam}) => {
                 </div>
             </div>
             <div className="">
-                <button className='max-sm:btn max-sm:btn-block text-xl text-red-400 hover:text-red-600 active:text-red-800'>Remove</button>
+                <button onClick={()=>removeCart(cartiteam.id)} className='max-sm:btn max-sm:btn-block text-xl text-red-400 hover:text-red-600 active:text-red-800'>Remove</button>
             </div>
         </div>
     );

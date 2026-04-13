@@ -14,6 +14,7 @@ const dataFetch = async () => {
 const dataPromise = dataFetch();
 function App() {
   const [cart, setCart] = useState([]);
+  const total = cart.reduce((sum, item) => sum + item.price, 0);
   const updateCart = (product) => {
     const exists = cart.some(item => item.id === product.id);
     if (exists) {
@@ -23,6 +24,10 @@ function App() {
       setCart(temp)
     }
   }
+  const removeCart=(id)=>{
+    const temp= cart.filter(iteam=>iteam.id!==id);
+    setCart(temp)
+  }
   const [tab, updateTab] = useState(true);
   return (
     <>
@@ -30,7 +35,7 @@ function App() {
 
       <Banner></Banner>
       <Stats></Stats>
-      <Products setCart={setCart} dataPromise={dataPromise} cart={cart} updateCart={updateCart} tab={tab} updateTab={updateTab}></Products>
+      <Products removeCart={removeCart}  total={total}  setCart={setCart} dataPromise={dataPromise} cart={cart} updateCart={updateCart} tab={tab} updateTab={updateTab}></Products>
       <Steps></Steps>
       <Pricing></Pricing>
       <Workflow></Workflow>
