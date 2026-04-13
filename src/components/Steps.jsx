@@ -4,13 +4,13 @@ import Package from '../assets/package.png'
 import Rocket from '../assets/rocket.png'
 const Steps = () => {
     return (
-        <div className='w-11/12 mx-auto my-10 space-y-5'>
+        <div className='sm:w-11/12 mx-auto my-10 space-y-5'>
             <h2 className='text-3xl lg:text-4xl font-bold text-center mt-15'>
                 Get Started In 3 Steps
             </h2>
             <p className='text-center text-gray-600'>Start using premium digital tools in minutes, not hours. </p>
 
-            <div className='card-section grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4 p-15'>
+            <div className='card-section grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4 p-2 sm:p-15'>
 
 
                 <div className=" relative flex flex-col gap-6 p-9 text-center">
