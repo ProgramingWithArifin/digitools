@@ -3,7 +3,7 @@
 A modern digital tools marketplace where users can browse and purchase premium digital products including AI writing tools, design templates, stock assets, and more.
 
 ## 🚀 Live Site
-[Live Demo](https://digitools-tan.vercel.app/)
+[Click Here](https://digitools-tan.vercel.app/)
 
 ## 🛠️ Technologies Used
 - React.js
