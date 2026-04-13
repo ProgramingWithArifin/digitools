@@ -2,11 +2,12 @@ import { use } from 'react';
 import ProductCard from './ProductCard'
 import Cart from './Cart'
 import React from 'react';
-
+import { toast } from 'react-toastify';
 const Products = ({ dataPromise, cart, updateCart, tab, updateTab,setCart,total, removeCart }) => {
     const data = use(dataPromise);
     const clearCart=()=>{
         setCart([])
+        toast.success("Checkout Successfull")
     }
     return (
         <div className='w-11/12 mx-auto my-10 space-y-5'>

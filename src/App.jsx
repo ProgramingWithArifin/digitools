@@ -7,6 +7,7 @@ import Pricing from './components/Pricing'
 import Workflow from './components/Workflow'
 import Footer from './components/Footer'
 import { useState } from 'react'
+import {toast, ToastContainer} from 'react-toastify';
 const dataFetch = async () => {
   const res = await fetch('./product.json');
   return res.json()
@@ -18,14 +19,17 @@ function App() {
   const updateCart = (product) => {
     const exists = cart.some(item => item.id === product.id);
     if (exists) {
+      toast.warn("Already On The Cart")
       return;
     } else {
-      const temp = [...cart, product];
+      const temp = [...cart , product];
+     toast.success("Added To The cart")
       setCart(temp)
     }
   }
   const removeCart=(id)=>{
     const temp= cart.filter(iteam=>iteam.id!==id);
+    toast.error("Removed from the Cart")
     setCart(temp)
   }
   const [tab, updateTab] = useState(true);
@@ -40,6 +44,7 @@ function App() {
       <Pricing></Pricing>
       <Workflow></Workflow>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </>
   )
 }
