@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <div className='max-w-7xl mx-auto w-11/12 flex flex-col lg:flex-row justify-between items-center gap-17 py-10 pt-2'>
             <div className="left space-y-7 flex-1">
-                <div className=" text-violet-500 flex items-center gap-2 bg-violet-100 p-2 rounded-3xl">
+                <div className=" text-violet-500 flex items-center gap-2 w-fit px-3 font-semibold bg-sky-100 p-2 rounded-3xl">
                     <div aria-label="status" className="status status-primary"></div>
                     <p>
                         New: AI-Powered Tools Available
@@ -13,7 +13,7 @@ const Banner = () => {
                 <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold'>
                     Supercharge Your <br /> Digital Workflow
                 </h1>
-                <p>
+                <p className='text-gray-600'>
                     Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.Explore Products
                 </p>
                 <div className="btn-area flex gap-2">

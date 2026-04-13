@@ -5,19 +5,19 @@ const ProductCard = ({ product, cart, updateCart }) => {
     const isInCart = cart.some(item => item.id === product.id);
     return (
         <div className="card w-full max-w-94 bg-base-100 shadow-xl mx-auto">
-            <div className="card-body">
+            <div className="card-body space-y-2">
                 <div className='flex justify-between h-12'>
                     <img src={product.image} alt="" />
                     <span className={`badge ${tagBg} font-bold rounded-xl`}>{product.tag}</span>
                 </div>
-                <div className="space-y-2">
+                <div className="space-y-3">
                     <h2 className="text-2xl font-bold">{product.name}</h2>
-                    <p>{product.description}</p>
+                    <p className='text-lg text-gray-600'>{product.description}</p>
                     <span className="text-xl font-semibold">
-                        ${product.price} /{product.period}
+                        ${product.price} <span className='text-sm text-gray-600'>/{product.period}</span>
                     </span>
                 </div>
-                <ul className="mt-6 flex flex-col gap-2 text-xs">
+                <ul className="mt-3 flex flex-col gap-2 text-xs text-gray-600">
                     {
                         product.features.map((feature , index) =>
                             <li key={index}>

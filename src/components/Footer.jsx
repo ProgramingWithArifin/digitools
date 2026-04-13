@@ -58,7 +58,7 @@ const Footer = () => {
 
                 <div className='border-t border-[#273146] mx-10 py-10 flex flex-col md:flex-row justify-between items-center gap-4 text-white opacity-60'>
                     <aside>
-                        <p>© {new Date().getFullYear()} Digitools. All rights reserved..</p>
+                        <p>© {new Date().getFullYear()} Digitools. All rights reserved.</p>
                     </aside>
                     <nav className="flex gap-6">
                         <a className="link link-hover text-sm">Privacy Policy</a>

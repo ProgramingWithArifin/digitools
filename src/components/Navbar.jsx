@@ -43,7 +43,7 @@ const Navbar = ({ cart, updateTab }) => {
                     )}
                 </button>
                 <button className='btn btn-ghost font-bold text-gray-700'>Login</button>
-                <button className='btn btn-primary rounded-3xl'>Get Started</button>
+                <button className='btn btn-primary rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>Get Started</button>
             </div>
         </nav>
     );

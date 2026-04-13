@@ -2,8 +2,8 @@ import React from 'react';
 
 const Workflow = () => {
     return (
-        <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] mt-10 py-10 space-y-5 text-center'>
-            <h2 className='text-3xl text-white font-bold'> Ready to Transform Your Workflow?</h2>
+        <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] mt-10 py-15 space-y-7 text-center'>
+            <h2 className='text-3xl lg:text-4xl text-white font-bold'> Ready to Transform Your Workflow?</h2>
             <p className='max-w-150 text-white mx-auto'>Join thousands of professionals who are already using Digitools to work smarter.
                 Start your free trial today.</p>
             <div className="btn-area flex justify-center gap-2">

@@ -3,7 +3,7 @@ import React from 'react';
 const Pricing = () => {
     return (
         <div className='w-11/12 mx-auto my-10 space-y-7'>
-            <h2 className='text-3xl font-bold text-center mt-15'>
+            <h2 className='text-3xl lg:text-4xl font-bold text-center mt-15'>
                 Simple, Transparent Pricing            
             </h2>
             <p className='text-center'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
@@ -11,12 +11,12 @@ const Pricing = () => {
 
                 <div className="card bg-[#F9FAFC] border border-[#F2F2F2] p-8 shadow-sm space-y-6">
                     <div>
-                        <h2 className="text-3xl font-bold text-slate-900 mb-2">Starter</h2>
+                        <h2 className="text-2xl font-bold text-slate-900 mb-2">Starter</h2>
                         <p className="text-[#627382] text-lg leading-relaxed">Perfect for getting started</p>
                     </div>
 
                     <div className="flex items-baseline">
-                        <span className="text-4xl font-bold text-[#101727]">$0</span>
+                        <span className="text-3xl font-bold text-[#101727]">$0</span>
                         <span className="text-slate-400 text-xl ml-1">/Month</span>
                     </div>
 
@@ -59,12 +59,12 @@ const Pricing = () => {
                     </div>
 
                     <div>
-                        <h2 className="text-3xl font-bold mb-2">Pro</h2>
+                        <h2 className="text-2xl font-bold mb-2">Pro</h2>
                         <p className="text-base-300 text-lg leading-relaxed">Best for professionals</p>
                     </div>
 
                     <div className="flex items-baseline">
-                        <span className="text-4xl font-bold">$29</span>
+                        <span className="text-3xl font-bold">$29</span>
                         <span className="text-xl ml-1">/Month</span>
                     </div>
 
@@ -115,12 +115,12 @@ const Pricing = () => {
 
                 <div className="card bg-[#F9FAFC] border border-[#F2F2F2] p-8 shadow-sm space-y-6">
                     <div>
-                        <h2 className="text-3xl font-bold text-slate-900 mb-2">Enterprise</h2>
+                        <h2 className="text-2xl font-bold text-slate-900 mb-2">Enterprise</h2>
                         <p className="text-[#627382] text-lg leading-relaxed">For teams and businesses</p>
                     </div>
 
                     <div className="flex items-baseline">
-                        <span className="text-4xl font-bold text-[#101727]">$99</span>
+                        <span className="text-3xl font-bold text-[#101727]">$99</span>
                         <span className="text-slate-400 text-xl ml-1">/Month</span>
                     </div>
 
