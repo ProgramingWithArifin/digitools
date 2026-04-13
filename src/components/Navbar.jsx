@@ -19,7 +19,7 @@ const Navbar = ({ cart, updateTab }) => {
                         <li><a className="hover:text-primary">FAQ</a></li>
                     </ul>
                 </div>
-                <a className="text-2xl font-extrabold text-primary cursor-pointer ">DigiTools</a>
+                <a className="text-xl sm:text-2xl font-extrabold text-primary cursor-pointer ">DigiTools</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -42,8 +42,8 @@ const Navbar = ({ cart, updateTab }) => {
                         </span>
                     )}
                 </button>
-                <button className='btn btn-ghost font-bold text-gray-700'>Login</button>
-                <button className='btn btn-primary rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>Get Started</button>
+                <button className='btn btn-sm sm:btn-md btn-ghost font-bold text-gray-700'>Login</button>
+                <button className='btn btn-sm sm:btn-md btn-primary rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>Get Started</button>
             </div>
         </nav>
     );
